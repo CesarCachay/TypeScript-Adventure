@@ -1,8 +1,13 @@
-import * as React from 'react';
+import * as React from "react";
 
-const Scroll = (props) => {
+interface IScrollProps {
+  children?: JSX.Element;
+}
+const Scroll = (props: IScrollProps) => {
   return (
-    <div style={{ overflow: 'scroll', border: '5px solid black', height: '800px'}}>
+    <div
+      style={{ overflow: "scroll", border: "5px solid black", height: "800px" }}
+    >
       {props.children}
     </div>
   );
